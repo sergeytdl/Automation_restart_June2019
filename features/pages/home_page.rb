@@ -18,6 +18,7 @@ end
     @main_searche.isVisible
     @find_button.isVisible
     end
+    
 
     def load
     visit('')
@@ -39,9 +40,7 @@ end
     end
     def checkPrice
     @find_price1.isVisible
-    @find_price2.isVisible
-    @find_price3.isVisible
-
-
+    # @find_price2.isVisible
+    # @find_price3.isVisible
     end
 end
