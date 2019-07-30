@@ -21,8 +21,18 @@ class Element
     def click
       find.click
     end
-  
+
+    def set(text)
+      el = find_element
+      el.send_keys(text)
+    end
+
     def send_keys(value)
       find.send_keys value
     end
+
+    def css
+      @value[:value]
+    end 
+    
 end
