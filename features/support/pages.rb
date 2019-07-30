@@ -22,5 +22,10 @@ class Pages
     @page_account
     end
 
+    def page_item
+    @page_item ||= ItemPage.new
+    @page_item
+    end
+
   end
   

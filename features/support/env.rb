@@ -4,11 +4,8 @@ require 'capybara/rspec'
 require 'selenium-webdriver'
 require 'json'
 require 'base64'
-#require "chromedriver/helper"
 require 'webdrivers'
 require 'rspec'
-# Selenium::WebDriver::Chrome.driver_path
-# Selenium::WebDriver::Chrome.driver_path='C:\Ruby24-x64\bin\chromedriver.exe'
 Capybara.app_host = "http://automationpractice.com/index.php"
 Capybara.save_path = 'report/'
 Capybara::Screenshot.autosave_on_failure = false

@@ -1,6 +1,6 @@
 Feature: Adding Item
     
-    Scenario: Blaaa
+    Scenario: Item adding
     Given I have opened landing page
     And I am on Sign In page
     And I login with login "sergtest@inbox.lv" and password "pagaiduparole"
@@ -9,21 +9,12 @@ Feature: Adding Item
     When I select Search menu
     And I enter "Blouse"
     And I click on Search button
-
-    # Given I have opened landing page
-    # And I am on Sign In page
-    # And I login with login "sergtest@inbox.lv" and password "pagaiduparole"
-    # Given I am logged in 
-    # When I select Search menu
-    # And I enter "Blouse"
-    # And I click on Search button
-    # And only 1 result is found
-    # And I select the item
-    # And item description and condition is displayed
+    And Only 1 result is found
+    And I select the item
     # And I change quantity to 2
     # And I set size to S
     # And I set color to White
-    # And I select Add to cart button
+    #And I select Add to cart button
     # And item is successfully added to cart
     # And I click on Proceed to checkout button
     # Then Shopping cart summary page is opened
