@@ -11,10 +11,11 @@ And(/^I press Create account button$/) do
 end
 
 #5
-And("I enter a mandatory user details, name: {string} lastname: {string}") do |name, lastname|
-  @pages.page_sign_up.mandatoryName(name)
-  @pages.page_sign_up.mandatoryLastname(lastname)
+And(/^I enter a mandatory user details$/) do
+  # @pages.page_sign_up.mandatoryName(name)  name: {string} lastname: {string}"
+  # @pages.page_sign_up.mandatoryLastname(lastname)  do |name, lastname|
   @pages.page_sign_up.drop_down('alaska')
+  @pages.page_sign_up.mandatoryFieldsInput
 end
 
 And(/^I press Register button$/) do

@@ -1,11 +1,21 @@
 Feature: Adding Item
     
+    Scenario: Blaaa
     Given I have opened landing page
     And I am on Sign In page
     And I login with login "sergtest@inbox.lv" and password "pagaiduparole"
-    Given I am logged in 
+    And I press login button
+    And I am logged in
     When I select Search menu
     And I enter "Blouse"
+    And I click on Search button
+
+    # Given I have opened landing page
+    # And I am on Sign In page
+    # And I login with login "sergtest@inbox.lv" and password "pagaiduparole"
+    # Given I am logged in 
+    # When I select Search menu
+    # And I enter "Blouse"
     # And I click on Search button
     # And only 1 result is found
     # And I select the item
