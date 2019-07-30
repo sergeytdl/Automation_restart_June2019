@@ -25,16 +25,8 @@ class SignUpPage < BasePage
     @create_account_button.click
     end 
     
-    # def mandatoryName(name)
-    # @enter_customer_first_name.send_keys(name)
-    # end
-
-    # def mandatoryLastname(lastname)
-    # @enter_customer_last_name.send_keys(lastname)
-    # end
 
     def mandatoryFieldsInput
-    #random = (Random.rand(1000..99999)).to_s
     @enter_customer_first_name.send_keys("vards")
     @enter_customer_last_name.send_keys("uzvards")
     @enter_password.send_keys("12345678")
