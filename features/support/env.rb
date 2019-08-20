@@ -8,7 +8,7 @@ require 'webdrivers'
 require 'rspec'
 Capybara.app_host = "http://automationpractice.com/index.php"
 Capybara.save_path = 'report/'
-Capybara::Screenshot.autosave_on_failure = false
+Capybara::Screenshot.autosave_on_failure = true
 Capybara::Screenshot.prune_strategy = :keep_last_run
 
 # ========================= ENVIRONMENT SETUP ========================#

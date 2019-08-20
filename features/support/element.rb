@@ -7,7 +7,11 @@ class Element
       Capybara.find(@value[:type], @value[:value])
       
     end
-  
+    
+    def clear
+      find.native.clear
+    end
+
     def visible?
       find.visible?
     end

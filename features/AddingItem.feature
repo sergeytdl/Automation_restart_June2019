@@ -11,8 +11,8 @@ Feature: Adding Item
     And I click on Search button
     And Only 1 result is found
     And I select the item
-    # And I change quantity to 2
-    # And I set size to S
+    And I change quantity to 2
+    And I set size to S
     # And I set color to White
     #And I select Add to cart button
     # And item is successfully added to cart
@@ -23,3 +23,7 @@ Feature: Adding Item
     # And Proceed to checkout button is visible
 
 
+#   I am navigated to My Account section
+#   Examples: information
+#     | day | month | year | stateName  |
+#     | 24  | September   | 1999 | Alaska     |

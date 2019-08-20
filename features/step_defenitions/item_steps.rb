@@ -11,4 +11,11 @@ And (/^I select Add to cart button$/) do
     @pages.page_item.close_window
 end
 
+And (/^I change quantity to 2$/) do
+    @pages.page_item.select_quantity
+end
+
+And (/^I set size to S$/) do
+    @pages.page_item.select_size('S')
+end
 
