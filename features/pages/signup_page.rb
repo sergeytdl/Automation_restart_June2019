@@ -11,6 +11,7 @@ class SignUpPage < BasePage
         @enter_address = Element.new(:css, '#address1')
         @enter_pastcode = Element.new(:css, '#postcode')
         @enter_phone_mobile = Element.new(:css, '#phone_mobile')
+        @enter_email = Element.new(:css, '#email_create')
   
         @select_state = Element.new(:css, '#uniform-id_state')
         @select_state_options = Element.new(:css, '#id_state option')
@@ -59,5 +60,10 @@ class SignUpPage < BasePage
 
     def clickRegisterButton
     @register_button.click
+    end
+
+    def enter_email
+    random = (Random.rand(1000..9999)).to_s
+    @enter_email.send_keys("something#{random}@gmail.com")
     end
 end

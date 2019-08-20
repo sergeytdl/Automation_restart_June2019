@@ -36,7 +36,6 @@ end
     @quantity_field.click
     @quantity_field.clear
     @quantity_field.send_keys('2')
-    sleep (2)
     end
 
     def select_size(size)
@@ -50,7 +49,6 @@ end
 
     def add_item_to_cart
     @add_to_cart_button.click
-    sleep (2)
     end
 
     def added_to_cart

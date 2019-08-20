@@ -4,7 +4,6 @@ end
 
 And (/^I select the item$/) do
     @pages.page_item.open_item
-    sleep (3)
 end
 
 # And (/^I select Add to cart button$/) do

@@ -13,16 +13,13 @@ end
 
 When (/^I select Search menu$/) do
     @pages.page_account.select_search_menu
-    sleep (1)
 end
 
 
 And ("I enter {string}") do |item|
     @pages.page_account.enter_item(item)
-    sleep (2)
 end
 
 And (/^I click on Search button$/) do
     @pages.page_account.press_search
-    sleep (2)
 end
