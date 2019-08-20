@@ -20,3 +20,11 @@ end
 And(/^Correct personal information is displayed$/) do
 @pages.page_account.checkInfo
 end
+
+And(/^I click on BEST SELLERS button$/) do
+@pages.page_first.best_seller 
+end
+
+And(/^I open My Whishlist page$/) do
+@pages.page_account.my_wishlist_part
+end

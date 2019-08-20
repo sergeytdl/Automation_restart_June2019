@@ -27,5 +27,10 @@ class Pages
     @page_item
     end
 
+    def page_cart
+      @page_cart ||= CartPage.new
+      @page_cart
+      end
+
   end
   

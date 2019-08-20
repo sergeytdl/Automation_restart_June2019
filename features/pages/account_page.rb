@@ -4,9 +4,10 @@ class AccountPage
     @create_account_button = Element.new(:css, '#center_column > div > div:nth-child(1)')
     @search_menu = Element.new(:css, '#search_query_top')
     @search_button = Element.new(:css, '#searchbox > button')
-    @personal_info_button = Element.new(:css, '#center_column > div > div:nth-child(1) > ul > li:nth-child(4)')
-    @personal_info_header = Element.new(:css, '#columns > div.breadcrumb.clearfix > span.navigation_page')
+    @personal_info_button = Element.new(:css, '#header > div.nav > div > div > nav > div:nth-child(1)')
+    @personal_info_header = Element.new(:css, '#columns > div.breadcrumb.clearfix')
     @find_firstname = Element.new(:xpath, '//*[@id="header"]/div[2]/div/div/nav/div[1]/a/span[contains(text(), "vards uzvards")]')
+    @my_wishlist_button = Element.new(:xpath, '//*[@id="center_column"]/div/div[2]/ul/li/a')
 end
 
     def logged_in
@@ -37,5 +38,7 @@ end
     @find_firstname.isVisible
     end
 
-
+    def my_wishlist_part
+    @my_wishlist_button.click
+    end
 end
