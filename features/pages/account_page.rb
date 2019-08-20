@@ -6,7 +6,7 @@ class AccountPage
     @search_button = Element.new(:css, '#searchbox > button')
     @personal_info_button = Element.new(:css, '#header > div.nav > div > div > nav > div:nth-child(1)')
     @personal_info_header = Element.new(:css, '#columns > div.breadcrumb.clearfix')
-    @find_firstname = Element.new(:xpath, '//*[@id="header"]/div[2]/div/div/nav/div[1]/a/span[contains(text(), "vards uzvards")]')
+    @find_firstname = Element.new(:xpath, '//*[@id="header"]//nav//a/span[contains(text(), "vards uzvards")]')
     @my_wishlist_button = Element.new(:xpath, '//*[@id="center_column"]/div/div[2]/ul/li/a')
 end
 
