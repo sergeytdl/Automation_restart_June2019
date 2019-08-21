@@ -1,13 +1,19 @@
 class AccountPage
 
     def initialize
-    @create_account_button = Element.new(:css, '#center_column > div > div:nth-child(1)')
+    @create_account_button = Element.new(:css, '#center_column > h1')
+    # '#center_column > div > div:nth-child(1)
     @search_menu = Element.new(:css, '#search_query_top')
     @search_button = Element.new(:css, '#searchbox > button')
-    @personal_info_button = Element.new(:css, '#header > div.nav > div > div > nav > div:nth-child(1)')
-    @personal_info_header = Element.new(:css, '#columns > div.breadcrumb.clearfix')
+    @personal_info_button = Element.new(:css, '.account')
+    #header > div.nav > div > div > nav > div:nth-child(1)
+    @personal_info_header = Element.new(:xpath, '//*[@id="columns"]/div[1]')
+    # #columns > div.breadcrumb.clearfix
     @find_firstname = Element.new(:xpath, '//*[@id="header"]//nav//a/span[contains(text(), "vards uzvards")]')
-    @my_wishlist_button = Element.new(:xpath, '//*[@id="center_column"]/div/div[2]/ul/li/a')
+    # //*[@id="header"]//nav//a/span[@text="vards uzvards"]
+    # div.dwdwdwd div.vards
+    @my_wishlist_button = Element.new(:css, '.lnk_wishlist')
+    # '//*[@id="center_column"]/div/div[2]/ul/li/a
 end
 
     def logged_in

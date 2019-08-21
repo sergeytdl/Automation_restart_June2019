@@ -4,8 +4,9 @@ class CartPage
     @cart_title = Element.new(:css, '#cart_title')
     @description = Element.new(:xpath, '//*[@id="product_2_7_0_204571"]//a[contains(text(), "Blouse")]')
     @amount = Element.new(:xpath, '//*[@id="summary_products_quantity"][contains(text(), "2 Products")]')
-    @checkout_button2 = Element.new(:xpath, '//*[@id="center_column"]/p[2]/a[1]')
-    end
+    @checkout_button2 = Element.new(:css, 'a.standard-checkout.button-medium')
+    # //*[@id="center_column"]/p[2]/a[1]
+end
 
     def cart_is_opened
     @cart_title.isVisible

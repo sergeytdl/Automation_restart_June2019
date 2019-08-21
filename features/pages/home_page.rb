@@ -3,8 +3,8 @@ class HomePage < BasePage
 
 
     def initialize
-        @main_logo = Element.new(:css, '#header_logo > a > img')
-        @signin_button = Element.new(:css, '#header > div.nav > div nav > div.header_user_info > a')
+        @main_logo = Element.new(:css, '.logo')
+        @signin_button = Element.new(:css, '.login')
         @best_seller_button = Element.new(:xpath, '//*[@id="block_various_links_footer"]/ul/li[3]/a')
     end
 

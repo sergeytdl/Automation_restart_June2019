@@ -2,8 +2,8 @@ class ItemPage < BasePage
 
     def initialize
     @find_firstname = Element.new(:xpath, '//*[@id="center_column"]/h1/span[2][contains(text(), "1 result")]')
-    @open_item = Element.new(:css, '#center_column > ul > li > div > div.left-block > div')
-    @close_window = Element.new(:css, '#search > div.fancybox-overlay.fancybox-overlay-fixed > div > div > a')
+    @open_item = Element.new(:css, 'div.left-block')
+
     @quantity_field = Element.new(:css, '#quantity_wanted')
     @size_dropdown = Element.new(:css, '#uniform-group_1')
     @size_option = Element.new(:css, '#uniform-group_1')
@@ -11,7 +11,8 @@ class ItemPage < BasePage
     @add_to_cart_button = Element.new(:css, '#add_to_cart')
     @item_added_text = Element.new(:xpath, '//*[@id="layer_cart_product_title"][contains(text(), "Blouse")]')
     @checkout_button = Element.new(:xpath, '//*[@id="layer_cart"]//a')
-    @first_item = Element.new(:xpath, '//*[@id="center_column"]//li[1]//div/a[1]/img')
+    @first_item = Element.new(:xpath, '//*[@id="center_column"]//li[1]//div//img')
+    # '//*[@id="center_column"]//li[1]//div/a[1]/img'
     @main_description = Element.new(:css, '#short_description_content')
     @add_wishlist_button = Element.new(:css, '#wishlist_button')
     @add_wishlist_close_popup = Element.new(:xpath, '//*[@id="product"]/div[2]/div/div/a')
