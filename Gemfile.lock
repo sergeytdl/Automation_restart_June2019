@@ -62,7 +62,7 @@ GEM
       identifies_as
     identifies_as (1.1.1)
     jaro_winkler (1.5.3)
-    json (2.2.0)
+    json (2.3.0)
     launchy (2.4.3)
       addressable (~> 2.3)
     loofah (2.2.3)
@@ -131,7 +131,7 @@ GEM
 PLATFORMS
   ruby
   x64-mingw32
-#
+
 DEPENDENCIES
   appium_capybara
   capybara
